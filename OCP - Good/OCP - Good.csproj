@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{ED947209-612A-4FFE-9EEA-3F6C8133AE23}</ProjectGuid>
+    <ProjectGuid>{64E85317-BCFB-46B0-901F-B61E0A6E4766}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>OCP</RootNamespace>
-    <AssemblyName>OCP</AssemblyName>
+    <RootNamespace>OCP - Good</RootNamespace>
+    <AssemblyName>OCP - Good</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,9 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FileLogger.cs" />
+    <Compile Include="OCPSmartPhone.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SmartPhone.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -6,11 +6,11 @@ namespace OCP
     {
         static void Main(string[] args)
         {
-            var smartPhone = new SmartPhone();
+            var smartPhone = new OCPSmartPhone();
             do
             {
                 Console.WriteLine("Enter a phone number to call");
-                smartPhone.MakePhoneCall();
+                smartPhone.UsePhone();
                 Console.WriteLine("Press Escape if yu do not want to continue!");
             } while (Console.ReadKey().Key != ConsoleKey.Escape);
         }
