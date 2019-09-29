@@ -18,7 +18,7 @@ namespace DIP
             Employee emp = new Employee()
             {
                 ID = id,
-                Name = "Pranaya",
+                Name = "Ionescu",
                 Department = "IT",
                 Salary = 10000
             };

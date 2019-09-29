@@ -47,6 +47,8 @@
     <Compile Include="LSPVehicle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Square\Square.cs" />
+    <Compile Include="Square\SquareTest.cs" />
     <Compile Include="Vehicle.cs" />
   </ItemGroup>
   <ItemGroup>
