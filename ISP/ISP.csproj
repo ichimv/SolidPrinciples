@@ -42,9 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ISPMessage.cs" />
-    <Compile Include="ISPMessageSimpler.cs" />
-    <Compile Include="ISPPrinter.cs" />
     <Compile Include="Message.cs" />
     <Compile Include="Printer.cs" />
     <Compile Include="Program.cs" />

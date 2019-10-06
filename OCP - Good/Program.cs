@@ -6,13 +6,11 @@ namespace OCP
     {
         static void Main(string[] args)
         {
-            var smartPhone = new OCPSmartPhone();
-            do
-            {
-                Console.WriteLine("Enter a phone number to call");
-                smartPhone.UsePhone();
-                Console.WriteLine("Press Escape if yu do not want to continue!");
-            } while (Console.ReadKey().Key != ConsoleKey.Escape);
+            IShape[] shapes = new IShape[] {
+                new Rectangle {Width = 10, Height = 20 },
+                new Circle { Radius = 20 } };
+
+            ShapesAreaCalculator.Area(shapes);
         }
     }
 }

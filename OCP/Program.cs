@@ -6,13 +6,18 @@ namespace OCP
     {
         static void Main(string[] args)
         {
-            var smartPhone = new SmartPhone();
-            do
-            {
-                Console.WriteLine("Enter a phone number to call");
-                smartPhone.MakePhoneCall();
-                Console.WriteLine("Press Escape if yu do not want to continue!");
-            } while (Console.ReadKey().Key != ConsoleKey.Escape);
+            Rectangle[] rectangles = new Rectangle[] {
+                new Rectangle {Width = 10, Height = 20 },
+                new Rectangle{Width = 20, Height = 10 } };
+
+            RectanglesAreaCalculator.Area(rectangles);
+
+
+            object[] shapes = new object[] {
+                new Rectangle {Width = 10, Height = 20 },
+                new Circle { Radius = 20 } };
+
+            ShapesAreaCalculator.Area(shapes);
         }
     }
 }
