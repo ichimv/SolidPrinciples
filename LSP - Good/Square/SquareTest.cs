@@ -5,15 +5,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
 
-namespace LSP
+namespace LSP.Square
 {
+    class RectangleTest
+    {
+        void ValidateRectangleArea()
+        {
+            IShape r = new Rectangle(5, 4);
+            Debug.Assert((r.Area() == 20.0));
+        }
+    }
+
     class SquareTest
     {
-        void ValidateRectangleArea(Rectangle r)
+        void ValidateSquareArea()
         {
-            r.SetWidth(5);
-            r.SetHeight(4);
-            Debug.Assert((r.GetWidth() * r.GetHeight() == 20.0));
+            IShape s = new Square(4);
+            Debug.Assert((s.Area() == 16.0));
         }
     }
 }
