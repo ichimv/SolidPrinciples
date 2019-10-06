@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0BD34C9A-DDDB-49BA-AE3A-17B9C75366F4}</ProjectGuid>
+    <ProjectGuid>{28ACA6A3-B4A3-43CC-BABB-6F8B3C89DEE2}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>ISP</RootNamespace>
     <AssemblyName>ISP</AssemblyName>
@@ -42,14 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ISPMessage.cs" />
-    <Compile Include="ISPMessageSimpler.cs" />
-    <Compile Include="ISPPrinter.cs" />
-    <Compile Include="Message.cs" />
-    <Compile Include="Printer.cs" />
+    <Compile Include="Message\ISPMessage.cs" />
+    <Compile Include="Message\ISPMessageSimpler.cs" />
+    <Compile Include="Printer\ISPPrinter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SmartPhone.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

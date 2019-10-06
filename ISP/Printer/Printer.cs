@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace ISP
 {
-    public interface IPrinterTasks
+    public interface IAdministrativeMashine
     {
         void Print(string PrintContent);
+        void Staple(string StapleContent);
         void Scan(string ScanContent);
+        void PhotoCopy(string photoCopyContent);
         void Fax(string FaxContent);
         void PrintDuplex(string PrintDuplexContent);
     }
 
-    public class HPLaserJetPrinter : IPrinterTasks
+    public class HPLaserJetPrinter : IAdministrativeMashine
     {
         public void Print(string PrintContent)
         {
@@ -32,9 +34,19 @@ namespace ISP
         {
             Console.WriteLine("Print Duplex content");
         }
+
+        public void Staple(string StapleContent)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void PhotoCopy(string photoCopyContent)
+        {
+            Console.WriteLine("Photo copy content");
+        }
     }
 
-    class LiquidInkjetPrinter : IPrinterTasks
+    class LiquidInkjetPrinter : IAdministrativeMashine
     {
         public void Print(string PrintContent)
         {
@@ -49,6 +61,16 @@ namespace ISP
             throw new NotImplementedException();
         }
         public void PrintDuplex(string PrintDuplexContent)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Staple(string StapleContent)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void PhotoCopy(string photoCopyContent)
         {
             throw new NotImplementedException();
         }

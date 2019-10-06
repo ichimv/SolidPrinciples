@@ -42,10 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DIPEmploy.cs" />
-    <Compile Include="Employcs.cs" />
+    <Compile Include="Employ\Employcs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Worker\Manager.cs" />
+    <Compile Include="Worker\SuperWorker.cs" />
+    <Compile Include="Worker\Worker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
