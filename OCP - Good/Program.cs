@@ -10,7 +10,8 @@ namespace OCP
                 new Rectangle {Width = 10, Height = 20 },
                 new Circle { Radius = 20 } };
 
-            ShapesAreaCalculator.Area(shapes);
+            ShapesAreaCalculator areaCalc = new ShapesAreaCalculator();
+            double totalArea = areaCalc.Area(shapes);
         }
     }
 }

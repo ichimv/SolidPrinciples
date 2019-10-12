@@ -2,7 +2,7 @@
 {
     class ShapesAreaCalculator
     {
-        public static double Area(IShape[] shapes)
+        public double Area(IShape[] shapes)
         {
             double totalArea = 0;
             foreach (var shape in shapes)
